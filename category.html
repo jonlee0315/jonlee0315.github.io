@@ -1,0 +1,58 @@
+---
+title: Categories
+layout: default
+header-img: "img/bg/bg_category.jpg"
+---
+
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 分类 -->
+			<div id='tag_cloud' class="tags">
+				{% for c in site.categories %}
+				<a href="#{{ c[0] }}" title="{{ c[0] }}" rel="{{ c[1].size }}">{{ c[0] }}</a>
+				{% endfor %}
+			</div>
+			
+			<!-- 分类列表 -->
+			{% for c in site.categories %}
+			<div class="one-tag-list">
+			  	<span class="fa fa-th-list listing-seperator" id="{{ c[0] }}">
+                    <span class="tag-text">{{ c[0] }}</span>
+                </span>
+				{% for post in c[1] %}
+				<div class="post-preview">
+				    <a href="{{ post.url | prepend: site.baseurl }}">
+				        <h2 class="post-title">
+                            {{ post.title }}
+				        </h2>
+				        {% if post.subtitle %}
+				        <h3 class="post-subtitle">
+				            {{ post.subtitle }}
+				        </h3>
+				        {% endif %}
+				    </a>
+				</div>
+				<hr>
+				{% endfor %}
+			</div>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>
