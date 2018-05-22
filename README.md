@@ -1,2 +1,2 @@
 # 我的博客
-<lijiaheng.me>
+[lijiaheng.me](http://www.lijiaheng.me "")
