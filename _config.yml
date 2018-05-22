@@ -1,5 +1,5 @@
 # Site settings
-title: Jon Lee
+title: 李佳恒的博客
 SEOTitle: 李佳恒的博客 | JonLee Blog
 header-img: img/bg/bg_index.jpg
 email: heuljh@163.com
@@ -42,16 +42,19 @@ bd_share: false                          # whether or not using baidu share
 
 # Analytics settings
 # Baidu Analytics
-#ba_track_id: 07529a93af5fa9f808261a1318c3aba4
+ba_track_id: 2396cb9097f9376598b1987d5325ac23
+
+#Time Zone
+#timezone: CN
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "热爱编程、篮球🏀"
+sidebar-about-description: ""
 sidebar-avatar: /img/avatar-xs.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
 # Category
 categories: true                        # whether or not using Categories
@@ -59,7 +62,7 @@ categories: true                        # whether or not using Categories
 # Friends
 friends: [
    {
-        title: "Jon Blog",
+        title: "旺铺招租",
         href: "http://lijiaheng.me"
     }
 ]

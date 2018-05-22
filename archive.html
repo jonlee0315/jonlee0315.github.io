@@ -22,34 +22,37 @@ header-img: "img/bg/bg_archive.jpg"
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
+            <br>
+            <br>
 			{% for post in site.posts %}
 				{% unless post %}
 				{% else %}
 					{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 					{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+                    {% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
+					{% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}
 					{% if year != nyear %}
-						</br>
+                        {% if year != '2018' %}
+                        <hr>
+                        {% endif %}
 						<span class="fa fa-archive listing-seperator " id="y{{ post.date | date: '%Y' }}">
 							<span class="tag-text">{{ post.date | date: '%Y' }}</span>
 						</span>
-						</br>
+                        <br>
+                        <br>
+					{% endif %}
+                    {% if month != nmonth %}
+							<strong>{{ post.date | date: '%b' }}</strong>
 					{% endif %}
 				{% endunless %}
 					<li style="font-size:18px">
-						<time>
-							{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.&nbsp&nbsp
+						<a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>&nbsp&nbsp
+                        <time>
+							<small>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</small>&nbsp&nbsp
 						</time>
-						<a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}&nbsp &nbsp</a>
-						<span class="fa fa-tag"/>
-						<span id="tag_cloud" class="tags">
-                        {% for tag in post.tags %}
-                            <a href="/tags/#{{ tag }}" title="{{ tag }}" rel="{{ tag.size }}">{{ tag }}</a>
-                        {% endfor %}
-						</span>
 					</li>
 			{% endfor %}
-			
+            <hr>
 		</div>
 	</div>
 </div>
