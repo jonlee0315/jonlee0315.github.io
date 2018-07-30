@@ -2,13 +2,13 @@
 layout:     post
 title:      "Markdown基本语法"
 subtitle:   "How to M↓"
-date:       2017-05-21
+date:       2017-03-01
 author:     "Jon Lee"
 header-img: "img/in-post/2018-05-21-learn-markdown/bg.jpg"
 catalog: true
 categories : 随笔
 tags:
-    - Markdown
+    - 随笔
 ---
 
 # 概述

@@ -1,0 +1,22 @@
+---
+layout:     post
+title:      "科学上网👀"
+subtitle:   ""
+date:       2017-11-19
+author:     "Jon Lee"
+header-img: "img/in-post/2017-11-19-vpn/bg.jpg"
+catalog:    false
+categories : 随笔
+tags:
+    - vpn
+---
+---
+ShadowSocks下载地址
+
+* [windows](http://7xpa61.com1.z0.glb.clouddn.com/windows.rar)
+* [mac](http://7xpa61.com1.z0.glb.clouddn.com/bcoderSSMAC-2.6.3.dmg)
+* [android](http://7xpa61.com1.z0.glb.clouddn.com/windows.rar)
+
+推荐一个网站   ：[http://mgyvpn.com/clientarea.php](http://mgyvpn.com/clientarea.php)
+
+---
