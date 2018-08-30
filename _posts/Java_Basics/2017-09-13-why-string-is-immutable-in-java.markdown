@@ -10,6 +10,7 @@ categories : Java基础
 tags:
     - Java
 ---
+
 ---
 ### 什么是不可变类
 
@@ -86,3 +87,5 @@ Java中经常用到一个字符串的 **hashcode**，例如在HashMap和HashSet�
 
 >《Effective Java Ⅱ》 Item 15  
 https://www.programcreek.com/2013/04/why-string-is-immutable-in-java/
+
+---

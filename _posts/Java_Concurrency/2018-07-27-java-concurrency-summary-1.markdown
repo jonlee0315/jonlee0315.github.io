@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Java并发知识点总结（一）"
-subtitle:   "Java Concurrency Summary"
+subtitle:   "Synchronized, volatile"
 date:       2018-07-27
 author:     "Jon Lee"
 header-img: "img/in-post/2018-07-27-java-concurrency-summary/bg.jpg"
@@ -11,6 +11,8 @@ tags:
     - Java
     - 并发
 ---
+
+>Java并发知识点总结，个人笔记，并不是教程😀，如有错误欢迎指正谢谢。
 
 ### synchronized关键字
 ---
@@ -546,5 +548,8 @@ add 9
 `count`调用`countDown()`后值为0，阻塞线程 **t2** 被唤醒。
 
 ### 参考资料
-> https://www.youtube.com/watch?v=_D7MiAEM3oY  
-《深入理解Java虚拟机》
+
+>《深入理解Java虚拟机》  
+https://www.youtube.com/watch?v=_D7MiAEM3oY&list=PL0onFhfJfEDD2KcgyXlAFg20XDLabnXqz
+
+---

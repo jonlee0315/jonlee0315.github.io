@@ -49,7 +49,7 @@ ba_track_id: 2396cb9097f9376598b1987d5325ac23
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: ""
+sidebar-about-description: "缺一个Offer..."
 sidebar-avatar: /img/avatar-xs.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
